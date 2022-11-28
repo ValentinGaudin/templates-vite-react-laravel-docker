@@ -2,6 +2,6 @@ services:
   platform:
     environment:
       STARTUP_COMMAND_1: npm install
-      STARTUP_COMMAND_2: npm run start -- --port 3000 --host platform.${DOMAIN}
+      STARTUP_COMMAND_2: npm run dev -- --port 3000 --host
     volumes:
       - ../platform:/usr/src/app/:delegated
